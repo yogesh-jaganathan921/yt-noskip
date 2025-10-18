@@ -53,7 +53,7 @@ new MutationObserver(() => attachCommentListeners())
 
 addEventListener('keydown', (e) => {
     if (!isCommenting) {
-        const skipKeys = ['arrowleft', 'arrowright', 'j', 'l'];
+        const skipKeys = ['arrowright', 'l'];
         if (skipKeys.includes(e.key.toLowerCase())) {
             e.stopImmediatePropagation();
             e.preventDefault();
