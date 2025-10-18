@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "No Skip YouTube",
+  "version": "1.0",
+  "description": "Blocks clicks on the progress bar to prevent skipping.",
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
